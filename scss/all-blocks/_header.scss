@@ -1,0 +1,39 @@
+.header {
+  &__content {
+    @include useFlex;
+    margin-top: 16px;
+  }
+  &__left {
+    @include useFlex;
+  }
+  &__logo {
+    background-color: $text-color-FFF;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+  }
+  &__logotep {
+    padding: 24px 74px 24px 24px;
+  }
+  &__logo-2 {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    margin-left: 249.5px;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14.63px;
+      letter-spacing: 5%;
+      color: $text-color-FFF;
+    }
+  }
+  &__logo-5,
+  .menu {
+    display: none;
+  }
+}

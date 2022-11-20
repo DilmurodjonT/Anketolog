@@ -1,0 +1,56 @@
+.help {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    padding: 83px 0 124px;
+    text-align: center;
+  }
+  &__subtitle {
+    max-width: 1230px;
+    h1 {
+      font-weight: 300;
+      font-size: 72px;
+      line-height: 72px;
+      color: $text-color-FFF;
+    }
+  }
+  &__text {
+    margin: 0 auto;
+    max-width: 526px;
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24.38px;
+      color: $text-color-FFF;
+      margin-top: 40px;
+      margin-bottom: 48px;
+    }
+  }
+  &__button-1 {
+    @include useBtn_blue;
+    margin-right: 20px;
+  }
+  &__button-1:hover {
+    @include useBtn_blue(transparent, $text-color-FFF);
+  }
+  &__button-2 {
+    @include useBtn_blue(transparent, $text-color-FFF);
+  }
+  &__button-2:hover {
+    @include useBtn_blue;
+  }
+  &__logos {
+    padding: 31px 17px 0 41px;
+    background-color: $text-color-FFF;
+    border-radius: 20px 20px 0 0;
+  }
+  &__arrow {
+    @include useArrow;
+  }
+  &__arrow:hover {
+    @include useArrow($bg-color-757);
+  }
+}

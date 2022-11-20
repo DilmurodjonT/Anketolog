@@ -1,0 +1,40 @@
+.capabilities {
+  padding: 80px 0;
+  &__title {
+    text-align: center;
+  }
+  &__subtitle {
+    max-width: 635px;
+    margin: 0 auto;
+    h2 {
+      @include useTitle;
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    max-width: 627px;
+    margin: 0 auto;
+    strong {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24.38px;
+      color: $text-color-333;
+    }
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $text-color-333;
+      margin-top: 8px;
+      margin-bottom: 64px;
+    }
+  }
+  &__desktop {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+  }
+  &__dot {
+    text-align: center;
+  }
+}

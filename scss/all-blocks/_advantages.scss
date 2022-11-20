@@ -1,0 +1,141 @@
+.advantages {
+  padding: 80px 0;
+  &__content {
+    @include useContent;
+  }
+  &__title {
+    h2 {
+      @include useTitle;
+      margin-bottom: 40px;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+  &__card {
+    padding: 40px 38px 83px 48px;
+    max-width: 540px;
+    background-color: $text-color-FFF;
+    box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.1);
+    border-radius: 9px;
+    position: relative;
+    strong {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px;
+      color: $text-color-333;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text-color-333;
+      margin-top: 10px;
+    }
+    span {
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
+      font-weight: 100;
+      font-size: 80px;
+      line-height: 100px;
+      color: #2b2b2b;
+      opacity: 0.1;
+    }
+  }
+  &__services {
+    margin-top: 40px;
+    padding: 40px 49px;
+    display: flex;
+    column-gap: 80px;
+    max-width: 1050px;
+    background-color: $text-color-FFF;
+    box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.1);
+    border-radius: 9px;
+  }
+  &__left {
+    max-width: 426px;
+    h4 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px;
+      color: $text-color-333;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text-color-333;
+      margin-top: 24px;
+      margin-bottom: 70px;
+    }
+  }
+  &__button {
+    padding: 10px 18px;
+    background-color: $text-color-FFF;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.63px;
+    letter-spacing: 5%;
+    color: $text-color-333;
+  }
+  &__right-box {
+    display: flex;
+    max-width: 413px;
+    img {
+      margin-right: 24px;
+      margin-bottom: 30px;
+    }
+    &__right {
+      strong {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.94px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20.48px;
+      }
+      span {
+        color: $bg-color-757;
+      }
+    }
+  }
+  &__base {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 50px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  &__piece {
+    max-width: 160px;
+    img {
+      margin-bottom: 15px;
+    }
+    strong {
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 48px;
+      color: $text-color-333;
+    }
+    span {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+      color: $bg-color-757;
+    }
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $text-color-333;
+    }
+  }
+}
