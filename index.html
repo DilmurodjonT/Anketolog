@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="stylesheet" href="./css/style.min.css.map" />
-    <title>Document</title>
+    <title>Anketolog</title>
   </head>
-  <body class="body">
+  <body class="body body-m">
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -70,8 +70,10 @@
                   исследований
                 </p>
               </div>
-              <button class="help__button-1">Создать опрос</button>
-              <button class="help__button-2">Тарифы и цены</button>
+              <div class="help__buttons">
+                <button class="help__button-1">Создать опрос</button>
+                <button class="help__button-2">Тарифы и цены</button>
+              </div>
             </div>
             <div class="help__logos">
               <img
@@ -127,7 +129,7 @@
                 class="spend__position-2"
               />
             </div>
-            <div class="spend__card">
+            <div class="spend__card spend__card-none">
               <img src="./images/spend-card-3.svg" alt="card image" />
               <h5>Получайте результаты</h5>
               <p>
@@ -144,6 +146,23 @@
                 class="spend__position-3"
               />
             </div>
+          </div>
+          <div class="spend__card-respon">
+            <img src="./images/spend-card-3.svg" alt="card image" />
+            <h5>Получайте результаты</h5>
+            <p>
+              Наблюдайте за ходом опроса онлайн. Выгружайте статистику или
+              ответы <span>в нужном вам формате</span>
+            </p>
+            <img src="./images/spend-card-3.1.svg" alt="icon" />
+            <img src="./images/spend-card-3.2.svg" alt="icon" />
+            <img src="./images/spend-card-3.3.svg" alt="icon" />
+            <img src="./images/spend-card-3.4.svg" alt="icon" />
+            <img
+              src="./images/spend-position-3.png"
+              alt="image position"
+              class="spend__position-3"
+            />
           </div>
         </div>
       </section>
@@ -232,7 +251,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="service__card">
+              <div class="service__card service__card-none">
                 <div class="service__card-img">
                   <img src="./images/service-card-3.svg" alt="icon" />
                 </div>
@@ -246,6 +265,21 @@
                     <li>Изучение поведения покупателей</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+            <div class="service__card-respon">
+              <div class="service__card-text_res">
+                <p>HR и руководители компаний</p>
+                <ul>
+                  <li>Опросы клиентов</li>
+                  <li>Оценка уровня удовлетворенности</li>
+                  <li>Оценка уровня лояльности</li>
+                  <li>Получение обратной связи</li>
+                  <li>Изучение поведения покупателей</li>
+                </ul>
+              </div>
+              <div class="service__card-img_res">
+                <img src="./images/service-card-3.svg" alt="icon" />
               </div>
             </div>
           </div>
@@ -426,7 +460,248 @@
           </div>
         </div>
       </section>
+      <section class="client">
+        <div class="container">
+          <div class="client__content">
+            <div class="client__title">
+              <h2>Корпоративным клиентам</h2>
+              <p>
+                Создайте собственную систему опросов с помощью Anketolog Box
+              </p>
+            </div>
+            <div class="client__desktop-res">
+              <img src="./images/client-img.png" alt="desktop" />
+            </div>
+            <div class="client__desktop">
+              <div class="client__left">
+                <img src="./images/client-icon-1.svg" alt="icon" />
+                <strong>Профессиональный конструктор </strong>
+                <p class="client__left-text">
+                  с 18 типами вопросов, настройкой внутренней логики и внешнего
+                  вида анкеты
+                </p>
+                <img src="./images/client-icon-2.svg" alt="icon" />
+                <strong>Хранение</strong>
+                <p>всех анкет и ответов на Вашем сервере</p>
+              </div>
+              <div class="client__medium">
+                <img src="./images/client-img.png" alt="desktop" />
+              </div>
+              <div class="client__right">
+                <img src="./images/client-icon-3.svg" alt="icon" />
+                <strong>Возможность проведения</strong>
+                <p class="client__left-text">
+                  на любом устройстве: компьютере, планшете, смартфоне
+                </p>
+                <img src="./images/client-icon-4.svg" alt="icon" />
+                <strong>Создание рабочих групп</strong>
+                <p>и администрирование доступа сотрудников</p>
+              </div>
+            </div>
+            <div class="client__button">
+              <button class="client__button-1">Узнать подробнее</button>
+              <button class="client__button-2">Запросить стоимость</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__content">
+            <div class="reviews__title">
+              <h2>Отзывы наших клиентов</h2>
+            </div>
+            <div class="reviews__cards">
+              <img
+                src="./images/logo-strelka-1.svg"
+                alt="strelka"
+                class="help__arrow"
+              />
+              <div class="reviews__card">
+                <div class="reviews__card-img">
+                  <img src="./images/reviews-oval-1.png" alt="oval" />
+                  <div class="reviews__card-caption">
+                    <strong>Евгения Синицына</strong>
+                    <span
+                      >MARKETING ANALYTICS MANAGER <br />
+                      ДоДо Пицца</span
+                    >
+                  </div>
+                </div>
+                <p>
+                  Мы пользовались сервисом «Анкетолог» для проведения
+                  исследований, касающихся бренда и продукта. С помощью сервиса
+                  нам удалось оценить, как возросло знание бренда после
+                  проведения рекламной кампании. Мы выбрали наиболее эффективный
+                  рекламный ролик для запуска на ТВ и узнали о вкусовых
+                  предпочтениях нашей потенциальной целевой аудитории. Основными
+                  плюсами для нас оказались удобный и понятный интерфейс,
+                  качественная панель респондентов и отличное соотношение
+                  цена-качество. <br />
+                  <br />
+                  Большое спасибо за оперативность и отзывчивость модераторов —
+                  все анкеты тщательно проверялись перед запуском, а на все
+                  вопросы мы получали быстрый и развернутый ответ.
+                </p>
+              </div>
+              <div class="reviews__card reviews__card-none">
+                <div class="reviews__card-img">
+                  <img src="./images/reviews-oval-2.png" alt="oval" />
+                  <div class="reviews__card-caption">
+                    <strong>Наталия Вялкина</strong>
+                    <span
+                      >ДИРЕКТОР ДЕПАРТАМЕНТА ВНУТРЕННИХ КОММУНИКАЦИЙ И
+                      КОРПОРАТ<br />
+                      ООО «Ростелеком»</span
+                    >
+                  </div>
+                </div>
+                <p>
+                  «Институт общественного мнения Анкетолог» регулярно проводит
+                  количественные исследования для компании «Ростелеком». Его
+                  сотрудников отличает профессионализм и глубокая экспертиза.
+                  Качественно и в срок мы получаем услуги по организации и
+                  проведению исследований, отмечая при этом высокий уровень
+                  содержания аналитических отчетов, которые включают в себя
+                  также практические рекомендации.
+                </p>
+              </div>
+              <img
+                src="./images/logo-strelka-3.svg"
+                alt="strelka"
+                class="help__arrow"
+              />
+            </div>
+            <div class="reviews__card-respon">
+              <div class="reviews__card-respon__image">
+                <img
+                  src="./images/logo-strelka-1.svg"
+                  alt="strelka"
+                  class="help__arrow"
+                />
+                <img src="./images/reviews-oval-1.png" alt="oval" />
+                <img
+                  src="./images/logo-strelka-3.svg"
+                  alt="strelka"
+                  class="help__arrow"
+                />
+              </div>
+              <div class="reviews__card-respon__text">
+                <strong>Евгения Синицына</strong>
+                <span
+                  >MARKETING ANALYTICS MANAGER <br />
+                  ДоДо Пицца
+                </span>
+                <p>
+                  «Институт общественного мнения Анкетолог» регулярно проводит
+                  количественные исследования для компании «Ростелеком». Его
+                  сотрудников отличает профессионализм и глубокая экспертиза.
+                  Качественно и в срок мы получаем услуги по организации и
+                  проведению исследований, отмечая при этом высокий уровень
+                  содержания аналитических отчетов, которые включают в себя
+                  также практические рекомендации.
+                </p>
+              </div>
+            </div>
+            <div class="capabilities__dot reviews__dot">
+              <img src="./images/capabilities-dot.svg" alt="dot" />
+            </div>
+            <button class="reviews__button">Создать опрос</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left">
+            <strong>Конструктор анкет</strong>
+            <ul class="footer__list">
+              <li>О конструкторе</li>
+              <li>Тарифы</li>
+              <li>База респондентов</li>
+              <li>Демо-версия</li>
+              <li>Конструктор тестов</li>
+              <li>Образцы анкет</li>
+            </ul>
+            <strong>Продукты</strong>
+            <ul class="footer__list">
+              <li>Anketolog BOX</li>
+              <li>Rapid</li>
+            </ul>
+            <strong>Услуги</strong>
+            <ul class="footer__list">
+              <li>Маркетинговые исследования</li>
+              <li>Тестирование макетов</li>
+              <li>Опросы потребителей</li>
+              <li>Опросы сотрудников</li>
+              <li>Оценка узнаваемости бренда</li>
+            </ul>
+            <strong>Магазин Исследований</strong>
+            <ul class="footer__list">
+              <li>Каталог исследований</li>
+              <li>О магазине исследований</li>
+              <li>Специальные предложения</li>
+            </ul>
+            <strong>Сообщество респондентов</strong>
+            <ul class="footer__list">
+              <li>О сообществе</li>
+              <li>Благотворительность</li>
+              <li>FAQ</li>
+            </ul>
+            <strong>Информационный ресурс</strong>
+            <ul class="footer__list">
+              <li>Материалы</li>
+              <li>СМИ о нас</li>
+              <li>Качество данных</li>
+              <li>Реклама на сайте</li>
+            </ul>
+            <strong>Информация</strong>
+            <ul class="footer__list">
+              <li>О компании</li>
+              <li>База знаний</li>
+              <li>Блог</li>
+              <li>Пользовательское соглашение</li>
+              <li>Политика обработки персон. данных</li>
+              <li>Договор об оказании услуг</li>
+            </ul>
+            <strong>Партнерская программа</strong>
+            <ul class="footer__list">
+              <li>Привлечение респондентов</li>
+              <li>Привлечение заказчиков</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <div class="footer__box">
+              <div class="footer__forum">
+                <strong>Подпишитесь на нашу рассылку</strong>
+                <form action="https://echo.htmlacademy.ru/">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Ваш E-mail"
+                  />
+                  <button type="submit">
+                    <img src="./images/footer-sabmit.svg" alt="submit" />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__icons">
+                <strong>Мы в соцсетях:</strong>
+                <img src="./images/footer-facbook.svg" alt="facebook" />
+                <img src="./images/footer-twiter.svg" alt="twiter" />
+                <img src="./images/footer-ok.svg" alt="odnoklasniki" />
+                <img src="./images/footer-instagram.svg" alt="instagram" />
+              </div>
+            </div>
+            <div class="footer__logo">
+              <img src="./images/footer-logo.png" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

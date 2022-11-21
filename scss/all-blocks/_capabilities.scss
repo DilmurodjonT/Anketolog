@@ -38,3 +38,25 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 820px) {
+  .capabilities__desktop {
+    grid-template-columns: auto auto auto;
+  }
+  .capabilities__img-1,
+  .capabilities__img-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .capabilities__subtitle h2 {
+    font-size: 25px;
+  }
+  .capabilities__text {
+    max-width: 500px;
+  }
+  .capabilities__text strong {
+    font-size: 15px;
+  }
+}

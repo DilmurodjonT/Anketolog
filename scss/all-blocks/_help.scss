@@ -54,3 +54,84 @@
     @include useArrow($bg-color-757);
   }
 }
+
+@media only screen and (max-width: 1380px) {
+  .help__title {
+    padding: 138px 0 164px;
+  }
+  .help__subtitle {
+    max-width: 840px;
+  }
+  .help__subtitle h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .help__logo-5,
+  .help__logo-6,
+  .help__logo-7 {
+    display: none;
+  }
+  .help__logos {
+    padding: 20px 15px 0 15px;
+  }
+  .help__text p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .help__title {
+    padding: 65px 0 89px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .help__subtitle {
+    max-width: 530px;
+  }
+  .help__subtitle h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .help__text {
+    max-width: 430px;
+  }
+  .help__text p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .help__logo-4 {
+    display: none;
+  }
+  .help__title {
+    padding: 80px 0 125px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .help__title {
+    padding: 80px 0 62px;
+  }
+  .help__logo-3 {
+    display: none;
+  }
+  .help__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .help__button-1 {
+    margin-right: inherit;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .help__title {
+    padding: 43px 0 62px;
+  }
+  .help__logo-2 {
+    display: none;
+  }
+}

@@ -1,0 +1,126 @@
+.reviews {
+  padding: 80px 0;
+  &__content {
+    @include useContent;
+  }
+  &__title {
+    h2 {
+      @include useTitle;
+      margin-bottom: 40px;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 24px;
+  }
+  &__card {
+    padding: 24px 24px 32px;
+    max-width: 540px;
+    box-shadow: 0px 4px 24px rgba(51, 51, 51, 0.1);
+    border-radius: 9px;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: $text-color-333;
+      margin-top: 24px;
+    }
+  }
+  &__card-none {
+    height: 385px;
+  }
+  &__card-img {
+    display: flex;
+    column-gap: 16px;
+  }
+  &__card-caption {
+    strong {
+      display: block;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 24px;
+      color: $text-color-333;
+      margin-bottom: 10px;
+    }
+    span {
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 8px;
+      letter-spacing: 1px;
+    }
+  }
+  &__card-respon {
+    display: none;
+  }
+  &__button {
+    @include useBtn_blue;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .reviews__card-none {
+    display: none;
+  }
+  .reviews__card {
+    max-width: 425px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .reviews__title h2 {
+    font-size: 25px;
+  }
+  .reviews__cards {
+    display: none;
+  }
+  .capabilities__dot {
+    display: none;
+  }
+  .reviews__card-respon {
+    display: block;
+    padding: 24px 24px 32px;
+    max-width: 60%;
+    box-shadow: 0px 4px 24px rgba(51, 51, 51, 0.1);
+    border-radius: 9px;
+  }
+  .reviews__card-respon__image {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .reviews__card-respon__text {
+    strong {
+      display: block;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+      color: $text-color-333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 10px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: $text-color-333;
+    }
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .reviews__card-respon {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+.footer {
+  padding: 56px 0;
+  background-color: $bg-color-95E;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__left {
+    strong {
+      display: block;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 14.63px;
+      letter-spacing: 1px;
+      color: $text-color-FFF;
+      margin-bottom: 9px;
+    }
+  }
+  &__list {
+    display: flex;
+    li {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14.63px;
+      color: $text-color-0E0;
+      margin-right: 20px;
+      margin-bottom: 32px;
+    }
+  }
+  &__right {
+    strong {
+      display: block;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 14.63px;
+      letter-spacing: 1px;
+      color: $text-color-FFF;
+      margin-bottom: 9px;
+    }
+  }
+  &__forum {
+    margin-bottom: 40px;
+    input {
+      width: 174px;
+      height: 44px;
+      background-color: $bg-color-544;
+      border-radius: 2px;
+      color: $text-color-DBD;
+      padding-left: 12px;
+      margin-top: 24px;
+    }
+  }
+  &__icons {
+    img {
+      margin-top: 24px;
+      margin-right: 18px;
+    }
+  }
+  &__logo {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__box {
+    display: flex;
+    column-gap: 74px;
+  }
+  .footer__forum {
+    margin-bottom: inherit;
+  }
+  .footer__forum input {
+    margin-top: 10px;
+  }
+  .footer__icons img {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .footer__list {
+    display: none;
+  }
+  .footer__content {
+    align-items: center;
+  }
+  .footer__left strong {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer__box {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 25px;
+  }
+  .footer__icons {
+    text-align: center;
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .footer__forum {
+    text-align: center;
+    order: 2;
+  }
+}

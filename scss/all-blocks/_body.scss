@@ -2,5 +2,12 @@
   background-image: url(./../images/bg.png);
   background-repeat: no-repeat;
   background-position: top;
-  //   box-sizing: 100% 800px;
+  // box-sizing: 100% 800px;
+}
+
+@media only screen and (max-width: 910px) {
+  .body {
+    background-image: url(./../images/bg-L.jpg);
+    background-size: cover;
+  }
 }

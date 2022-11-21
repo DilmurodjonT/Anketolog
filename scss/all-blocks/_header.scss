@@ -37,3 +37,41 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 1380px) {
+  .header__list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .header {
+    background-color: $text-color-FFF;
+  }
+  .header__content {
+    margin-top: inherit;
+  }
+  .header__logo-4 {
+    display: none;
+  }
+  .header__logo-5,
+  .header .menu {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .header__logo {
+    background-color: inherit;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .header__logo-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .header__logo-5 {
+    display: none;
+  }
+}

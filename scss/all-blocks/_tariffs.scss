@@ -61,3 +61,57 @@
     margin-top: 40px;
   }
 }
+
+@media only screen and (max-width: 1380px) {
+  .tariffs__cards {
+    overflow-x: scroll;
+    max-width: 800px;
+  }
+  .tariffs__card {
+    padding: 40px 24px 48px 50px;
+  }
+
+  element.style {
+  }
+  .tariffs__card strong {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .tariffs__cards {
+    overflow-x: scroll;
+    width: 600px;
+  }
+  .tariffs__card strong {
+    font-size: 15px;
+  }
+  .tariffs__card span {
+    font-size: 35px;
+  }
+  .tariffs__card ul li {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  .tariffs__button {
+    padding: 7px 45px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .tariffs__title h2 {
+    font-size: 25px;
+  }
+  .tariffs__cards {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .tariffs__title h2 {
+    font-size: 18px;
+  }
+  .tariffs__cards {
+    width: 250px;
+  }
+}
